@@ -6,9 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        roboto:['Roboto', 'san-serif'],
-        philosopher:["Philosopher"]
-      }
+        open:["Open Sans"],
+      },
+
+      colors: {
+        'bg-color': '#72BF44',
+      },
     },
   },
   plugins: [],

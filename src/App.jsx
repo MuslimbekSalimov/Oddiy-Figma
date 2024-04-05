@@ -1,16 +1,27 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Home from './Components/Home';
+import { Routes, Route } from 'react-router-dom';
+import Header from './Components/Header/Header';
+import Home from './Components/Home/Home';
+import Footer from './Components/Footer/Footer';
+import AllMebels from './Components/Home/MebelZakaz/AllBemels';
+import Buy from './Components/Home/BuyPage/BuyFirst';
+import Shkafbuy from './Components/Home/BuyPage/ShkafBuy';
 
 function App() {
   return (
     <>
 
+    <Header/>
+
     <Routes>
-      <Route path='' element={<Home/>}/>
-      <Route path='home' element={<Home/>}/>
-      <Route path='*' element={"Error"}/>
+        <Route path='' element={<Home/>}/>
+        <Route path='home' element={<Home/>}/>
+        <Route path='delivery' element={<AllMebels/>}/>
+        <Route path='buy' element={<Buy/>}/>
+        <Route path='shkafbuy' element={<Shkafbuy/>}/>
+        <Route path='/*' element={"Error"}/>
     </Routes>
+    <Footer/>
 
     </>
   );

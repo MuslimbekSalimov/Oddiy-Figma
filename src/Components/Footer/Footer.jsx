@@ -1,111 +1,114 @@
-import Logo from "../Lib/img/logo.png";
-import Instagram from "../Lib/img/instagram.png";
-import Facebook from "../Lib/img/Facebook.png";
-import Twitter from "../Lib/img/Twitter.png";
-import Youtube from "../Lib/img/Youtube.png";
-
+import Logo from "../img/Logo.png";
+import Call from "../img/call.png";
+import Email from "../img/Email.png";
+// import Mapss from "../img/Map.png";
+import Facebok from "../img/Facebook.png";
+import Instagram from "../img/Instagram.png";
+import Youtube from "../img/Youtube.png";
+import Telagram from "../img/Telegram.png";
+import WKontakte from "../img/Wkontacte.png";
+// import { GoogleMap } from "@react-google-maps/api";
+import Iframe from "react-iframe";
+import Payments from "../img/payments.png";
 
 function Footer() {
-    return (
+    return(
         <>
-        <footer className="footer bg-zinc-900">
-            <div className="container">
-                <div className="flex pt-[137px] pb-[100px] justify-between">
-                    <ul className="flex flex-col items-start gap-[25px]">
-                        <li>
-                            <img src={Logo} alt="" />
-                        </li>
+        <footer className="footer bg-[#F7F7F7] mt-[81px] pb-[30px]">
+            <div className="container flex flex-col justify-around">
+                <div className="info flex gap-[146px] pt-[63px] justify-around">
 
-                        <li>
-                            <a className="opacity-60" href="www.company name.com">www.salimovvs.com</a>
-                        </li>
+                <div className="flex flex-col items-start gap-[15px]">
+                        <a href="#Logo">
+                            <img src={Logo} alt="Logo" />
+                        </a>
 
-                        <li>
-                           <a className="opacity-60" href="email">muslimbeksalimov0102@gmail.com</a>
-                        </li>
-                        
-                        <li>
-                           <a className="opacity-60" href="number">+998 99 701 3708</a>
-                        </li>
-                    </ul>
+                        <a href="https://t.me/webdevoloper2008" className="flex items-center gap-[10px]">
+                            <img src={Call} alt="Call" />
+                            +38093-717-29-29
+                        </a>
 
-                    <ul className="flex flex-col items-start gap-[25px]">
-                        <li>
-                           <h6 className="font-[Philosopher] font-[700] text-[18px]">Home</h6>
-                        </li>
+                        <a href="muslimbeksalimov0102@gmail.com" className="flex items-center gap-[10px]">
+                            <img src={Email} alt="Call" />
+                            kharkivmebelinfo@gmail.com
+                        </a>
 
-                        <li>
-                            <h6 className="opacity-60">Landingpage</h6>
-                        </li>
+                        {/* <a className="flex items-center gap-[10px]">
+                            <img src={Mapss} alt="Call" />
+                            Харьков
+                        </a> */}
 
-                        <li>
-                            <h6 className="opacity-60">Documentation</h6>
-                        </li>
-                        
-                        <li>
-                            <h6 className="opacity-60">Referral Program</h6>
-                        </li>
+                        <br/>
+                        <div className="flex items-center gap-[23px]">
+                            <a className=" hover:text-green-600" href="https://www.instagram.com/">
+                                <img className="w-[25px] h-[24px]" src={Facebok} alt="Instagram" />
+                            </a>
 
-                        <li>
-                            <h6 className="opacity-60">UI & UX Design</h6>
-                        </li>
+                            <a href="https://www.instagram.com/">
+                                <img className="w-[25px] h-[24px]" src={Instagram} alt="Instagram" />
+                            </a>
 
-                        <li>
-                            <h6 className="opacity-60">Web Design</h6>
-                        </li>
-                    </ul>
+                            <a href="https://www.instagram.com/">
+                                <img className="w-[25px] h-[24px]" src={Youtube} alt="Instagram" />
+                            </a>
 
-                    <ul className="flex flex-col items-start gap-[25px]">
-                        <li>
-                           <h6 className="font-[Philosopher] font-[700] text-[18px]">Menu</h6>
-                        </li>
+                            <a href="https://www.instagram.com/">
+                                <img className="w-[25px] h-[24px]" src={Telagram} alt="Instagram" />
+                            </a>
 
-                        <li>
-                            <h6 className="opacity-60">Landingpage</h6>
-                        </li>
+                            <a href="https://www.instagram.com/">
+                                <img className="w-[25px] h-[24px]" src={WKontakte} alt="Instagram" />
+                            </a>
+                        </div>
+                </div>
+                <ul className="flex gap-[75px]">
+                    <li className="flex flex-col gap-[10px]">
+                        <h4 className="font-[Open sans] font-[700] text-[24px]">Наш магазин</h4>
+                        {/* <br/> */}
+                        <a className="w-[184px] pt-[10px]" href="#О магазине">О магазине</a>
+                        <a className="w-[184px]" href="#Наши вакансии">Наши вакансии</a>
+                        <a className="w-[184px]" href="#Контакты">Контакты</a>
+                        <a className="w-[184px]" href="#Мебель в рассрочку">Мебель в рассрочку</a>
+                        <a className="w-[184px]" href="#Бренды">Бренды</a>
+                        <a className="w-[184px]" href="#Возврат товара">Возврат товара</a>
+                        <a className="w-[184px]" href="#Сертификаты">Сертификаты</a>
+                        <a className="w-[184px]" href="#Обзоры">Обзоры</a>
+                    </li>
 
-                        <li>
-                            <h6 className="opacity-60">Documentation</h6>
-                        </li>
-                        
-                        <li>
-                            <h6 className="opacity-60">Referral Program</h6>
-                        </li>
+                    <li className="flex flex-col gap-[10px]">
+                        <h4  className="font-[Open sans] font-[700] text-[24px]">Сервис</h4>
+                        <a className="w-[184px] pt-[10px]" href="#Ваши заказы">Ваши заказы</a>
+                        <a className="w-[184px]" href="#Доставка и оплата">Доставка и оплата</a>
+                        <a className="w-[184px]" href="#Сборка мебели">Сборка мебели</a>
+                        <a className="w-[184px]" href="#Хочу в подароку">Хочу в подарок</a>
+                        <a className="w-[184px]" href="#Список сравнения">Список сравнения</a>
+                        <a className="w-[184px]" href="#Карта сайта">Карта сайта</a>
+                    </li>
 
-                        <li>
-                            <h6 className="opacity-60">UI & UX Design</h6>
-                        </li>
+                    <li className="flex flex-col gap-[10px]">
+                        <h4 className="font-[Open sans] font-[700] text-[24px]">Помощь</h4>
+                        <a className="w-[184px]" href="#Статьи">Статьи</a>
+                        <a className="w-[184px]" href="#Вопрос ответ">Вопрос ответ</a>
+                        <a className="w-[184px]" href="#Производители">Производители</a>
+                    </li>
 
-                        <li>
-                            <h6 className="opacity-60">Web Design</h6>
-                        </li>
-                    </ul>
+                    <li>
+                        <h4 className="font-[Open sans] font-[700] text-[24px] pb-[20px]">Как найти нас ?</h4>
 
-                    <ul className="flex flex-col items-start gap-[25px]">
-                        <li>
-                           <h6 className="font-[Philosopher] font-[700] text-[18px]">Company</h6>
-                        </li>
+                           <Iframe className="rounded-[12px]" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d12634.017441663254!2d67.05843325336649!3d37.                           66085498910639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.                           1!3m2!1m1!2zMzfCsDM5JzExLjAiTiA2N8KwMDMnNTUuNyJF!5e0!3m2!1suz!2s!4v1711561086484!5m2!1suz!2s" width="331" height="229"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+                    </li>
+                </ul>
 
-                        <li>
-                            <h6 className="opacity-60">Landingpage</h6>
-                        </li>
+                </div>
 
-                        <li>
-                            <h6 className="opacity-60">Documentation</h6>
-                        </li>
-                        
-                        <li>
-                            <h6 className="opacity-60">Referral Program</h6>
-                        </li>
+                <div className="flex flex-col items-center justify-bettwen pt-[77px]">
+                     <hr  className="w-[1500px] h-[2px] pb-[30px] text-[#CACACA]"/>
 
-                        <li  className="flex items-center gap-[10px]">
-                            <img className="w-[21px] h-[21px]" src={Instagram} alt="Instagram" />
-                            <img className="w-[21px] h-[21px]" src={Facebook} alt="Facebook" />
-                            <img className="w-[21px] h-[21px]" src={Twitter} alt="Twitter" />
-                            <img className="w-[21px] h-[21px]" src={Youtube} alt="Youtube" />
-
-                        </li>
-                    </ul>
+                      <div className="flex items-center gap-[580px] ">
+                          <strong className="text-[#383838]"> ©"Kharkivmebel, 2005 - 2021.</strong>
+                           <img className="w-[144px] h-[24]" src={Payments} alt="Payments" />
+                          <strong className="animat text-[#383838]">Created & Powered by </strong>
+                </div>
                 </div>
             </div>
         </footer>

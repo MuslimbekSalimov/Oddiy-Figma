@@ -1,33 +1,89 @@
 .container {
-    max-width: 1180px;
+    max-width: 1920px;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0px 10px   ;
     margin: 0 auto;
 }
 
-.link {
+.dizayn {
+    background: url(./Components/img/FistBac.png) no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: auto;
     transition: all 0.5s ease-in-out;
 }
 
-.divv {
-    max-width: 555px;
-    width: 100%;
-}
-
-.button {
-    padding: 12px 25px;
-    background-color: #DC780B;
-    border-radius: 12px;
-}
-.flexss {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer {
-    a,h4,h5,h6 {
-        color: #FFFFFF;
+    a:hover {
+        font-weight: 600;
+        transition: all 0.5s ease-in-out;
     }
+
+.link:hover {
+    background-color: #F8F8F8;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.line {
+    width: 2px;
+    height: 441px;
+    background-color: #000;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+.animation:hover {
+    background: #FFF;
+    transition: 0.5s ease-in-out;
+    font-weight: 700;
+    border: solid 2px #000;
+    color: #000;
+}
+
+.animat:hover {
+    color: #FFF;
+    background: #000;
+    transition: 0.5s ease-in-out;
+}
+.border  {
+    border: solid 1px #ECECEC;
+}
+
+.linkkk:hover {
+    fill: #000;
+}
+
+.katalog__modal {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.modal {
+    position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     /* display: none; */
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__info {
+    background: #f5f5f5;
+    position: absolute;
+    top: 23%;
+    left: 8%;
+    width: 1297px;
+    height: 499px;
+}
+
+li,a {
+    text-decoration: none;
+    list-style-type: none;
 }
