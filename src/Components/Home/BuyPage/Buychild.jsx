@@ -1,37 +1,29 @@
-import { TagNaems } from "../../API/ALLAPI";
 import { Link } from "react-router-dom";
-import Karovat from "../../img/Karovati.png";
-import Divans from "../../img/Buyyingitems.png"
+import { TagNaems } from "../../API/ALLAPI";
+// import Karovat from "../../img/Karovati.png";
+import Divans from "../../img/Pxo0.png"
 import Card from "../../img/Card.png";
 import { Tovar } from "../../API/ALLAPI";
 import React from "react";
 
-function Shkafbuy() {
-
-    // const [divans, setdivans] = React.useState()
-
+function Buychild() {
     return (
         <>
-        <section className="shkaf">
+       <section className="shkaf">
             <div className="container">
             <div className="flex pt-[19px] pb-[19px]">
                      <Link className="font-[Open sans] text-[18px]" to="/home">{TagNaems.map((item) => (
                      <h3 className=" text-black">{item.head}</h3>
                      ))}</Link>
-                        <Link to={"/shkafbuy"}>
+                        <Link to={"/buychild"}>
                         {TagNaems.map((item) => (
                             <span className=" text-green-600 pl-[10px]">{item.krovat}</span> 
                          ))}
                         </Link>
                 </div>
 
-                <div className="flex pt-[50px] gap-[54px]">
-                    <picture className="flex flex-col items-center gap-[34px]">
-                        <img className="w-[95px] h-[95px]" src={Karovat} alt="Karovat" />
-                        <img className="w-[95px] h-[95px]" src={Karovat} alt="Karovat" />
-                        <img className="w-[95px] h-[95px]" src={Karovat} alt="Karovat" />
-                        <img className="w-[95px] h-[95px]" src={Karovat} alt="Karovat" />
-                    </picture>
+                <div className="flex flex-col items-center">
+                    <div className="flex items-center pt-[50px] gap-[54px]">
 
                     <picture>
                         <img className="w-[894px] h-[654px]" src={Divans} alt="BuyyItems" />
@@ -46,6 +38,7 @@ function Shkafbuy() {
                         <card>
                             <img className="w-[207px]" src={Card} alt="Card" />
                         </card>
+                    </div>
                     </div>
                 </div>
 
@@ -81,4 +74,4 @@ function Shkafbuy() {
     )
 }
 
-export default Shkafbuy;
+export default Buychild;
