@@ -105,9 +105,9 @@ function Footer() {
                      <hr  className="w-[1500px] h-[2px] pb-[30px] text-[#CACACA]"/>
 
                       <div className="flex items-center gap-[580px] ">
-                          <strong className="text-[#383838]"> ©"Kharkivmebel, 2005 - 2021.</strong>
+                          <strong className="text-[#383838]"> ©"Kharkivmebel, 2005 - 2024.</strong>
                            <img className="w-[144px] h-[24]" src={Payments} alt="Payments" />
-                          <strong className="animat text-[#383838]">Created & Powered by </strong>
+                          <strong className="animat text-[#383838]">Created & Muslimbek Salimov</strong>
                 </div>
                 </div>
             </div>

@@ -90,7 +90,7 @@ function Header() {
                             </li>
 
                             <li>
-                                <Link className="link" to="/donatpremium">Про нас</Link>
+                                <Link className="link" to="/about">Про нас</Link>
                             </li>
 
                             <li>
@@ -98,23 +98,23 @@ function Header() {
                             </li>
 
                             <li>
-                                <Link className="link" to="/shkaflar">Шкафы купе</Link>
+                                <Link className="link" to="/shkafbuy">Шкафы купе</Link>
                             </li>
 
                             <li>
-                                <Link className="link" to="/pochta">Доставка i оплата</Link>
+                                <Link className="link" to="/dostafka">Доставка i оплата</Link>
                             </li>
 
                             <li>
-                                <Link className="link" to="#Харьков мебель">Контакты</Link>
+                                <Link className="link" to="/contact">Контакты</Link>
                             </li>
 
                             <li>
-                                <Link className="link" to="#Харьков мебель">Письмо директору</Link>
+                                <Link className="link" to="/Харьков мебель">Письмо директору</Link>
                             </li>
 
                             <li>
-                                <Link className="link" to="#Харьков мебель">Бренды</Link>
+                                <Link className="link" to="/Харьков мебель">Бренды</Link>
                             </li>
 
                             <li>

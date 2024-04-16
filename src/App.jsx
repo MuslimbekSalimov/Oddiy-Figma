@@ -7,6 +7,9 @@ import AllMebels from './Components/Home/MebelZakaz/AllBemels';
 import Buy from './Components/Home/BuyPage/BuyFirst';
 import Shkafbuy from './Components/Home/BuyPage/ShkafBuy';
 import Buychild from './Components/Home/BuyPage/Buychild';
+import Aboutwe from './Components/Home/About/Aboutwe';
+import Dostafka from './Components/Home/Dostafka/Dostafka';
+import Contact from './Components/Home/Contacts/Contact';
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path='buy' element={<Buy/>}/>
         <Route path='shkafbuy' element={<Shkafbuy/>}/>
         <Route path='/buychild' element={<Buychild/>}/>
+        <Route path='/about' element={<Aboutwe/>}/>
+        <Route path='/dostafka' element={<Dostafka/>}/>
+        <Route path='/contact' element={<Contact/>}/>
         <Route path='/*' element={"Error"}/>
     </Routes>
     <Footer/>
